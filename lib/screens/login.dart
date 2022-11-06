@@ -20,7 +20,10 @@ class LoginPage extends StatelessWidget {
         children: [
           Image.asset("assets/images/login.png",
           fit: BoxFit.cover,),
+          Text("Welcome",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 40),)
+          
         ],
+
       ),
     );
   }
