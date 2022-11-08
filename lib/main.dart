@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: ThemeData(
           primarySwatch:Colors.deepPurple,
-      primaryTextTheme: GoogleFonts.latoTextTheme()),
+      fontFamily: GoogleFonts.lato().fontFamily,),
 
       darkTheme: ThemeData(
         brightness: Brightness.dark,
