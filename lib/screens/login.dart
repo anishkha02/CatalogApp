@@ -45,10 +45,13 @@ class LoginPage extends StatelessWidget {
 
                     ),
                   ),
-                  SizedBox(height: 20,),
+                  SizedBox(height: 40,),
                   ElevatedButton(
-                    child: Text("Login"),
-                      style: TextButton.styleFrom(),
+                    child: Text("Login",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold
+                      ),),
+                      style: TextButton.styleFrom(minimumSize: Size(120, 40)),
                     onPressed: (){
                       print("Hi my name is Anishkha...");
                     },
