@@ -61,16 +61,46 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                   SizedBox(height: 40,),
-                  ElevatedButton(
-                    child: Text("Login",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold
-                      ),),
-                      style: TextButton.styleFrom(minimumSize: Size(120, 40)),
-                    onPressed: (){
-                     Navigator.pushNamed(context, MyRoutes.homeRoute);
+
+                  InkWell(
+                    onTap: (){
+                      Navigator.pushNamed(context, MyRoutes.homeRoute);
                     },
+                    child: Container(
+                      height: 50,
+                      width: 140,
+
+                      alignment: Alignment.center,
+                      child: Text("Login",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 16
+                        ),
+
+                      ),
+                      decoration: BoxDecoration(
+                        color: Colors.deepPurple,
+                        borderRadius: BorderRadius.circular(8)
+                      ),
+                    ),
                   )
+
+
+
+
+
+
+                  // ElevatedButton(
+                  //   child: Text("Login",
+                  //     style: TextStyle(
+                  //       fontWeight: FontWeight.bold
+                  //     ),),
+                  //     style: TextButton.styleFrom(minimumSize: Size(120, 40)),
+                  //   onPressed: (){
+                  //    Navigator.pushNamed(context, MyRoutes.homeRoute);
+                  //   },
+                  // )
                 ],
               ),
             )
