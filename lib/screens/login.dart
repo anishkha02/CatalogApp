@@ -1,7 +1,15 @@
+import 'package:catalog_project/utils/routes.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
 
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+
+}
+
+class _LoginPageState extends State<LoginPage> {
+  String name="";
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -16,14 +24,15 @@ class LoginPage extends StatelessWidget {
       //     )
       // ),
 
-      child: SingleChildScrollView( //this is used to adjust the page according to various devices vo scrolling krdega rather than showing overflow//
+      child: SingleChildScrollView(//this is used to adjust the page according to various devices vo scrolling krdega rather than showing overflow//
         child: Column(
           children: [
             Image.asset("assets/images/login.png",
               //height: 500,//
             fit: BoxFit.cover,),
             SizedBox(height: 20,),   // Used for spacing and good presentation of the interface..//
-            Text("Welcome",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24
+            Text("Welcome $name",
+              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24
             ),),
             SizedBox(height: 20,),
             Padding(
@@ -36,6 +45,12 @@ class LoginPage extends StatelessWidget {
                       labelText: "UserName"
 
                     ),
+                    onChanged: (value){
+                    name=value;
+                    setState(() {
+
+                    });
+                    }
                   ),
                   TextFormField(
                     obscureText: true,
@@ -53,14 +68,14 @@ class LoginPage extends StatelessWidget {
                       ),),
                       style: TextButton.styleFrom(minimumSize: Size(120, 40)),
                     onPressed: (){
-                      print("Hi my name is Anishkha...");
+                     Navigator.pushNamed(context, MyRoutes.homeRoute);
                     },
                   )
                 ],
               ),
             )
 
-            
+
           ],
 
         ),
