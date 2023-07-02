@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "id": "Codepur001",
+      "name": "iPhone 12 Pro",
+      "desc": "Apple iPhone 12th generation",
+      "price": 999,
+      "color": "#33505a",
+      "image": "https://www.capesindia.com/cdn/shop/products/iphone-12-pro_Graphite_600x.png?v=1652856493"
+    },
+    {
+      "id": "Codepur002",
+      "name": "Pixel 5",
+      "desc": "Google Pixel 5th generation",
+      "price": 699,
+      "color": "#00ac51",
+      "image": ""
+    },
+    {
+      "id": "Codepur003",
+      "name": "M1 Macbook Air",
+      "desc": "Apple Macbook Air with apple silicon",
+      "price": 1099,
+      "color": "#e0bfae",
+      "image": ""
+    },
+    {
+      "id": "Codepur004",
+      "name": "Playstation 5",
+      "desc": "Song Playstation 5th generation",
+      "price": 500,
+      "color": "#544ee4",
+      "image": ""
+    },
+    {
+      "id": "Codepur005",
+      "name": "Airpods Pro",
+      "desc": "Apple Airpods Pro 1st generation",
+      "price": 200,
+      "color": "#e3e4e9",
+      "image": ""
+    },
+    {
+      "id": "Codepur006",
+      "name": "iPad Pro",
+      "desc": "Apple iPad Pro 2020 edition",
+      "price": 799,
+      "color": "#f73984",
+      "image": ""
+    },
+    {
+      "id": "Codepur007",
+      "name": "Galazy S21 Ultra",
+      "desc": "Samsung Galaxy S21 Ultra 2021 edition",
+      "price": 1299,
+      "color": "#1c1c1c",
+      "image": ""
+    },
+    {
+      "id": "Codepur008",
+      "name": "Galaxy S21",
+      "desc": "Samsung Galaxy S21 2021 edition",
+      "price": 899,
+      "color": "#7c95eb",
+      "image": ""
+    }
+  ]
+}
