@@ -41,15 +41,17 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     // final dummyList=List.generate(20, (index) => CatalogModel.items[0]);
+    // var buttonColor=MyTheme.lightBluishColor;
     return
      Scaffold(
-      backgroundColor: MyTheme.creamColor,
+      backgroundColor: context.canvasColor,
       floatingActionButton:
       FloatingActionButton(
         onPressed: ()=>Navigator.pushNamed(context, MyRoutes.cartRoute),
-        backgroundColor: MyTheme.darBluishColor,
-      child: Icon(CupertinoIcons.cart),
+        backgroundColor: MyTheme.darkBluishColor,
+      child: Icon(CupertinoIcons.cart,color: Colors.white,),
       ),
+
       body: SafeArea(
         child: Container(
           padding: EdgeInsets.all(32),

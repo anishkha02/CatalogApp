@@ -1,5 +1,7 @@
 import 'package:catalog_project/utils/routes.dart';
+import 'package:catalog_project/widgets/themes.dart';
 import 'package:flutter/material.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 class LoginPage extends StatefulWidget {
 
@@ -29,7 +31,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white,
+      color: context.canvasColor,
       // child: Center(
       //     child: Text("Login page",
       //       style: TextStyle(
@@ -96,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
                     SizedBox(height: 40,),
 
                     Material(
-                      color: Colors.deepPurple,
+                      color:MyTheme.darkBluishColor,
                       borderRadius: BorderRadius.circular(changedButton?70:8),
                       child: InkWell(
                        // splashColor: Colors.red,
