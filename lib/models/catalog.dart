@@ -3,21 +3,21 @@ import 'package:flutter/material.dart';
 
 class CatalogModel{
   static List<Item> items=[
-    Item(
-        id: 1,
-        name: "iPhone 12 Pro",
-        desc: "Apple iPhone 12th generation",
-        price: 999,
-        color: "#33505a",
-        image: "https://www.capesindia.com/cdn/shop/products/iphone-12-pro_Graphite_600x.png?v=1652856493"
-    )
+    // Item(
+    //     id: 1,
+    //     name: "iPhone 12 Pro",
+    //     desc: "Apple iPhone 12th generation",
+    //     price: 999,
+    //     color: "#33505a",
+    //     image: "https://www.capesindia.com/cdn/shop/products/iphone-12-pro_Graphite_600x.png?v=1652856493"
+    // )
   ];
 
   //Get item by Id
-  static Item getById(int id)=>items.firstWhere((element)=>element.id==id,orElse:null);
+   Item getById(int id)=>items.firstWhere((element)=>element.id==id,orElse:null);
 
   //Get Item by position
- static Item getByPosition(int pos)=>items[pos];
+  Item getByPosition(int pos)=>items[pos];
 
 }
 class Item{
