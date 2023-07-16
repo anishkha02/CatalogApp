@@ -61,7 +61,7 @@ class MyTheme{
         onSurface: Colors.white
     ),
     primaryColor: Colors.white,
-    hintColor:  Colors.white,
+    //hintColor:  Colors.white,
     //accentColor: Colors.white,
     //buttonColor: lightBluishColor,
     appBarTheme: AppBarTheme(
